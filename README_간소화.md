@@ -2,7 +2,7 @@
 
 # 👋 Hello, I'm Taemin Jeong 🙇🏻‍♂️
 
-**AI/Data Engineer & AI Agent Developer**
+**Data Engineer & AI Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-m2222n-181717?style=flat&logo=github)](https://github.com/m2222n)
 [![Email](https://img.shields.io/badge/Email-tamin214@naver.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:tamin214@naver.com)
@@ -60,41 +60,33 @@
 
 ## 🚀 프로젝트
 
-### [Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 구축](https://github.com/flickdone/crawler)
-> 대규모 저작권 안전 데이터 수집 및 점자 변환 자동화 시스템
-
+### [Crawler - AI 학습 데이터 파이프라인](https://github.com/flickdone/crawler)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=flat&logo=scrapy&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-### [AI_agent - RAG 기반 ETF 질의응답 챗봇](https://github.com/m2222n/AI_agent)
-> LangChain + FAISS 기반 금융 정보 검색 및 응답 시스템
-
+### [AI_agent - LLM 기반 ETF 챗봇](https://github.com/m2222n/AI_agent)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
 
-### [ko_br_math_api - 한국 점자 규정 기반 Rule-Based MT 알고리즘 개선](https://github.com/flickdone/ko_br_math_api)
-> LaTeX 수식 → 한국 수학 점자 변환 API (정확도 98.2%)
-
+### [ko_br_math_api - LaTeX → 한국 점자 변환 API](https://github.com/flickdone/ko_br_math_api)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
-### [seoul-mealkit-location-analysis - 서울시 신규 밀키트 매장 입지 선정 분석](https://github.com/m2222n/seoul-mealkit-location-analysis)
-> ML/DL 기반 최적 입지 추천 시스템
-
+### [seoul-mealkit-location-analysis - 밀키트 매장 입지 분석](https://github.com/m2222n/seoul-mealkit-location-analysis)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
 
-### [smartfarm_region_price - 농작물 재배 추천 지역 및 가격 예측 프로젝트](https://github.com/m2222n/smartfarm_region_price)
-> 토양 데이터 기반 최적 재배 지역 시각화 + 가격 예측 모델
-
+### [smartfarm_region_price - 농작물 지역별 가격 예측](https://github.com/m2222n/smartfarm_region_price)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
 ![Folium](https://img.shields.io/badge/Folium-77B829?style=flat)
 ![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=flat)
+
+
