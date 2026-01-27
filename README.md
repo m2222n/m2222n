@@ -89,15 +89,4 @@
 ![Folium](https://img.shields.io/badge/Folium-77B829?style=flat)
 ![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=flat)
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=m2222n&show_icons=true&theme=radical&hide_border=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=m2222n&layout=compact&theme=radical&hide_border=true)
-
-</div>
 
