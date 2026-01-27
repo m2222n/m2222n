@@ -1,12 +1,11 @@
 <div align="center">
 
-# 👋 안녕하세요, 저는 정태민입니다.
+# 👋 Hello, I'm Taemin Jeong 🙇🏻‍♂️
 
 **Data Engineer & AI Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-m2222n-181717?style=flat&logo=github)](https://github.com/m2222n)
 [![Email](https://img.shields.io/badge/Email-tamin214@naver.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:tamin214@naver.com)
-[![Blog](https://img.shields.io/badge/Blog-m2222n.tistory.com-FF5722?style=flat&logo=blogger&logoColor=white)](https://m2222n.tistory.com/)
 
 </div>
 
@@ -15,8 +14,9 @@
 ## 🛠️ 기술 스택
 
 ### Languages
-![Python](https://img.shields.io/badge/Python-3.9--3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 
 ### AI/ML & LLM
 ![OpenAI](https://img.shields.io/badge/OpenAI_GPT--4o-412991?style=for-the-badge&logo=openai&logoColor=white)
@@ -212,7 +212,6 @@
 ### 💬 Contact Me
 
 [![Email](https://img.shields.io/badge/Email-tamin214@naver.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tamin214@naver.com)
-[![Blog](https://img.shields.io/badge/Blog-m2222n.tistory.com-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://m2222n.tistory.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-m2222n-181717?style=for-the-badge&logo=github)](https://github.com/m2222n)
 
 </div>
