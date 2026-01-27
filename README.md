@@ -27,7 +27,8 @@
 ### Backend & Database
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL_15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### Data Engineering
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge&logo=scrapy&logoColor=white)
@@ -39,23 +40,6 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=for-the-badge)
 ![Folium](https://img.shields.io/badge/Folium-77B829?style=for-the-badge)
-
----
-
-## 💼 임팩트 지표
-
-<div align="center">
-
-| 지표 | 성과 |
-|:----:|:----:|
-| 📊 **데이터 수집** | **580,000+** 건 |
-| 🤖 **점자 변환** | **462,000+** 건 (98.2% 정확도) |
-| ⚡ **대규모 크롤링** | **78,000+** 파라미터 |
-| 🗺️ **지도 시각화** | **38개** 농작물 × **2,072개** 행정동 |
-| 🎯 **AI 챗봇** | **100%** 테스트 성공률 (17/17) |
-| 💻 **코드 리팩터링** | **82%** 감축 (3,229 → 570줄) |
-
-</div>
 
 ---
 
@@ -102,24 +86,3 @@
 
 </div>
 
----
-
-
-<div align="center">
-
-### 💬 Contact Me
-
-[![Email](https://img.shields.io/badge/Email-tamin214@naver.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tamin214@naver.com)
-[![GitHub](https://img.shields.io/badge/GitHub-m2222n-181717?style=for-the-badge&logo=github)](https://github.com/m2222n)
-
-</div>
-
----
-
-<div align="center">
-
-*"데이터로 문제를 해결하고, AI로 가치를 창출합니다"*
-
-![](https://komarev.com/ghpvc/?username=m2222n&color=blueviolet&style=flat-square)
-
-</div>
