@@ -65,7 +65,7 @@
 
 ## 🚀 프로젝트
 
-### [3D_printer_automation - 3D프린터-로봇 연동 자동화 시스템](https://github.com/m2222n/3D_printer_automation)
+### 3D_printer_automation - 3D프린터-로봇 연동 자동화 시스템 🔒 Private (오리누 주식회사)
 > Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 (1인 풀스택 개발, 43개 API 라우트)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -89,7 +89,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
 ### ko_br_math_api - 한국 수학 점자 RBMT 알고리즘 개선 🔒 Private (오리누 주식회사)
-> LaTeX 수식 → 한국 수학 점자 변환 API — 정확도 63% → 98.2% 개선 (339 테스트 케이스, 26단계 변환 파이프라인)
+> LaTeX 수식 → 한국 수학 점자 변환 API — 알고리즘 개선으로 정확도 63% → 98.2% 달성 (339 테스트 케이스, 26단계 변환 파이프라인)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
