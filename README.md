@@ -79,7 +79,7 @@
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
 
 ### Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 🔒 Private (오리누 주식회사)
-> 41개 소스(RSS/API/크롤러)에서 다국어 점자 병렬 말뭉치 수집 — 16개 Airflow DAG 스케줄링 자동화
+> 41개 소스(RSS/API/크롤러)에서 다국어 점자 병렬 말뭉치 수집 → 자동 전처리 + PostgreSQL 저장 — 16개 Airflow DAG 스케줄링 자동화
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=flat&logo=scrapy&logoColor=white)
