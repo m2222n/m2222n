@@ -121,8 +121,9 @@
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
 
 ### [DSML2022-stock-prediction - KRX 주가 예측 모의 트레이딩](https://github.com/m2222n/DSML2022-stock-prediction)
-> KRX 1,999개 종목 주가 데이터 ML/DL 모델 비교 분석 → LGBM 채택, 모의 트레이딩 수익률 +226% 달성
+> KRX 1,999개 종목 주가 데이터 ML/DL 모델 비교 분석 → LGBM 채택, 모의 트레이딩 수익률 +226% 달성 (TA 보조지표 50여개 피처 확장 + LSTM/GRU/MLP 패턴 분석)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-9ACD32?style=flat)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
