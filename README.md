@@ -103,7 +103,7 @@
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
 
 ### [seoul-mealkit-location-analysis - 서울시 밀키트 매장 최적 입지 분석](https://github.com/m2222n/seoul-mealkit-location-analysis)
-> 서울시 400+ 행정동 공공데이터 42종 분석 → ML/DL 최적 입지 추천 (SVC F1=0.667)
+> 서울시 277개 행정동 공공데이터 12종 분석 → ML/DL 최적 입지 추천 (SVC F1=0.667)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
