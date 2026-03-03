@@ -15,6 +15,7 @@
 
 ### Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 
@@ -27,6 +28,10 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ### Backend & Database
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -60,41 +65,57 @@
 
 ## 🚀 프로젝트
 
-### [Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 구축](https://github.com/flickdone/crawler)
-> 대규모 저작권 안전 데이터 수집 및 점자 변환 자동화 시스템
+### [3D_printer_automation - 3D프린터-로봇 연동 자동화 시스템](https://github.com/m2222n/3D_printer_automation)
+> Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 (1인 풀스택 개발, 43개 API 라우트)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
+
+### Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 🔒 Private (오리누 주식회사)
+> 41개 소스(RSS/API/크롤러)에서 다국어 점자 병렬 말뭉치 수집 — 16개 Airflow DAG 스케줄링 자동화
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=flat&logo=scrapy&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
-### [AI_agent - RAG 기반 ETF 질의응답 챗봇](https://github.com/m2222n/AI_agent)
-> LangChain + FAISS 기반 금융 정보 검색 및 응답 시스템
+### ko_br_math_api - 한국 수학 점자 RBMT 알고리즘 개선 🔒 Private (오리누 주식회사)
+> LaTeX 수식 → 한국 수학 점자 변환 API — 정확도 63% → 98.2% 개선 (339 테스트 케이스, 26단계 변환 파이프라인)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+
+### [AI_agent - RAG 기반 ETF 분석 질의응답 챗봇](https://github.com/m2222n/AI_agent)
+> LangChain + FAISS 벡터 검색으로 ETF 금융 데이터 분석 및 자연어 질의응답
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
 
-### [ko_br_math_api - 한국 점자 규정 기반 Rule-Based MT 알고리즘 개선](https://github.com/flickdone/ko_br_math_api)
-> LaTeX 수식 → 한국 수학 점자 변환 API (정확도 98.2%)
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-
-### [seoul-mealkit-location-analysis - 서울시 신규 밀키트 매장 입지 선정 분석](https://github.com/m2222n/seoul-mealkit-location-analysis)
-> ML/DL 기반 최적 입지 추천 시스템
+### [seoul-mealkit-location-analysis - 서울시 밀키트 매장 최적 입지 분석](https://github.com/m2222n/seoul-mealkit-location-analysis)
+> 서울시 400+ 행정동 공공데이터 42종 분석 → ML/DL 최적 입지 추천 (SVC F1=0.667)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
 
-### [smartfarm_region_price - 농작물 재배 추천 지역 및 가격 예측 프로젝트](https://github.com/m2222n/smartfarm_region_price)
-> 토양 데이터 기반 최적 재배 지역 시각화 + 가격 예측 모델
+### [smartfarm_region_price - 농작물 재배 적지 시각화 + 가격 예측](https://github.com/m2222n/smartfarm_region_price)
+> 38종 농작물 × 2,072개 지역 토양 데이터(78,000건) 분석 → Folium 인터랙티브 맵 + 가격 예측 모델
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
 ![Folium](https://img.shields.io/badge/Folium-77B829?style=flat)
 ![GeoPandas](https://img.shields.io/badge/GeoPandas-139C5A?style=flat)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
