@@ -68,6 +68,7 @@
 
 ### 3D_printer_automation - 3D프린터-로봇 연동 자동화 시스템 🔒 Private (오리누 주식회사)
 > Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 (1인 풀스택 개발, 43개 API 라우트)
+> 📅 2025.02 ~ 현재
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
@@ -78,8 +79,23 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
 
+<details>
+<summary>상세 내용</summary>
+
+- Formlabs Form 4 프린터 4대 + 협동로봇 연동 자동화 시스템
+- FastAPI 백엔드 (43개 API 라우트) + React/TypeScript 프론트엔드
+- WebSocket 실시간 프린터 상태 모니터링
+- Formlabs Web API + Local API 이중 통합
+- WireGuard VPN 기반 원격 접속 인프라
+- OpenMV + Edge Impulse 비전 기반 세척/경화 완료 감지
+- MQTT (Mosquitto) IoT 디바이스 통신
+- Docker 컨테이너 기반 배포
+
+</details>
+
 ### Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 🔒 Private (오리누 주식회사)
 > 41개 소스(RSS/API/크롤러)에서 다국어 점자 병렬 말뭉치 수집 → 자동 전처리 + PostgreSQL 저장 — 16개 Airflow DAG 스케줄링 자동화
+> 📅 2025.12 ~ 2026.01 (현재 타 프로젝트 배정)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=flat&logo=scrapy&logoColor=white)
@@ -90,10 +106,21 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
 ### ko_br_math_api - 한국 수학 점자 RBMT 알고리즘 개선 🔒 Private (오리누 주식회사)
-> LaTeX 수식 → 한국 수학 점자 변환 API — 알고리즘 개선으로 정확도 63% → 98.2% 달성 (339 테스트 케이스, 26단계 변환 파이프라인)
+> LaTeX 수식 → 한국 수학 점자 변환 API — 알고리즘 개선으로 정확도 63% → 98.23% 달성 (339 테스트 케이스, 26단계 변환 파이프라인)
+> 📅 2025.12 ~ 2026.01 (잠정중단)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+
+<details>
+<summary>상세 내용</summary>
+
+- LaTeX 수식을 한국 수학 점자로 변환하는 Rule-Based Machine Translation API
+- 26단계 변환 파이프라인 설계 및 구현
+- 339개 테스트 케이스 기반 정확도 검증 (63% → 98.23%)
+- FastAPI REST API 서빙
+
+</details>
 
 ### [AI_agent - RAG 기반 ETF 분석 질의응답 챗봇](https://github.com/m2222n/AI_agent)
 > LangChain + FAISS 벡터 검색으로 ETF 금융 데이터 분석 및 자연어 질의응답
