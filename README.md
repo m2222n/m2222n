@@ -105,6 +105,22 @@
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
+<details>
+<summary>상세 내용</summary>
+
+- 41개 데이터 소스 (RSS 14개, API 15개, Web 1개, Dynamic 4개 + 비활성 7개)
+- Scrapy 기반 4종 스파이더 (RSS/Web/API/Dynamic)
+- Playwright 동적 크롤링 (JS 렌더링 사이트)
+- PostgreSQL 10개 테이블 (raw_documents, sentences, images, braille_translations 등)
+- Airflow 16개 DAG 스케줄링 (KST 시간대, 커스텀 Timetable)
+- 커스텀 Airflow 대시보드 플러그인 (실시간 수집 현황, 점역 통계)
+- 자동 전처리 파이프라인 (raw → sentences 문장 분리 + 중복 제거)
+- 점역 서비스 연동 (한국어 RBMT, 영어 liblouis)
+- FastAPI REST API (문서/이미지/통계/점역 엔드포인트)
+- Docker Compose 배포 (Airflow + PostgreSQL + API)
+
+</details>
+
 ### ko_br_math_api - 한국 수학 점자 RBMT 알고리즘 개선 🔒 Private (오리누 주식회사)
 > LaTeX 수식 → 한국 수학 점자 변환 API — 알고리즘 개선으로 정확도 63% → 98.23% 달성 (339 테스트 케이스, 26단계 변환 파이프라인)
 > 📅 2025.12 ~ 2026.01 (잠정중단)
