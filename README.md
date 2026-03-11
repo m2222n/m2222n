@@ -2,7 +2,7 @@
 
 # 👋 Hello, I'm Taemin Jeong 🙇🏻‍♂️
 
-**AI/Data Engineer & AI Agent Developer**
+**AI/Data Engineer & Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-m2222n-181717?style=flat&logo=github)](https://github.com/m2222n)
 [![Email](https://img.shields.io/badge/Email-tamin214@naver.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:tamin214@naver.com)
@@ -28,6 +28,8 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -114,8 +116,7 @@
 - PostgreSQL 10개 테이블 (raw_documents, sentences, images, braille_translations 등)
 - Airflow 16개 DAG 스케줄링 (KST 시간대, 커스텀 Timetable)
 - 커스텀 Airflow 대시보드 플러그인 (실시간 수집 현황, 점역 통계)
-- 자동 전처리 파이프라인 (raw → sentences 문장 분리 + 중복 제거)
-- 점역 서비스 연동 (한국어 RBMT, 영어 liblouis)
+- 전처리 파이프라인 + 점역 자동화 서비스
 - FastAPI REST API (문서/이미지/통계/점역 엔드포인트)
 - Docker Compose 배포 (Airflow + PostgreSQL + API)
 
