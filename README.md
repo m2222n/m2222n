@@ -89,7 +89,7 @@
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat&logo=mqtt&logoColor=white)
 
 <details>
-<summary>▼ 상세 내용</summary>
+<summary>상세 내용</summary>
 
 - Formlabs Form 4 프린터 4대 + 협동로봇 연동 자동화 시스템
 - FastAPI 백엔드 (43개 API 라우트) + React/TypeScript 프론트엔드
@@ -120,7 +120,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 <details>
-<summary>▼ 상세 내용</summary>
+<summary>상세 내용</summary>
 
 - 문서 **490,127건**, 이미지 **90,697건** 수집 (저작권 100% 클린)
 - 점역 **462,411건** 완료 (검증 152,398건)
@@ -148,7 +148,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
 <details>
-<summary>▼ 상세 내용</summary>
+<summary>상세 내용</summary>
 
 - 변환 정확도 **98.23%** (333/339 테스트 케이스) — 기존 63% → 98.2%
 - 레거시 코드 **82% 감축** (3,229줄 → 570줄) 대규모 리팩터링
@@ -157,7 +157,7 @@
 - FastAPI 서버 2종 구축 (변환 API + 검증 API)
 - **현재 타 프로젝트 배정으로 일시 중단**
 
-**📅 기간**: 2026.01 (2주) | **역할**: 백엔드 개발자 (단독)
+**📅 기간**: 2026.01 (2주) | **역할**: 알고리즘/백엔드 개발자 (단독)
 
 </details>
 
