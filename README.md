@@ -109,14 +109,29 @@
 
 ---
 
-### [Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 구축](https://github.com/flickdone/crawler) 🔒 Private (오리누 주식회사) — 현재 타 프로젝트 배정
+### [Crawler - 점자 번역 학습 데이터 수집 자동 파이프라인 구축](https://github.com/flickdone/crawler) 🔒 Private (오리누 주식회사)
 > 대규모 저작권 안전 데이터 수집 및 점자 변환 자동화 시스템
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=flat&logo=scrapy&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+<details>
+<summary>▼ 상세 내용</summary>
+
+- 문서 **490,127건**, 이미지 **90,697건** 수집 (저작권 100% 클린)
+- 점역 **462,411건** 완료 (검증 152,398건)
+- Apache Airflow **16개 DAG** 자동화 스케줄링
+- Scrapy + Playwright 동적 크롤링 **41개 소스** 운영
+- 무중단 서버 마이그레이션 (PostgreSQL + Docker)
+- **현재 타 프로젝트 배정으로 일시 중단**
+
+**📅 기간**: 2025.12 ~ 2026.01 (2개월) | **역할**: 데이터 엔지니어 (3인 팀)
+
+</details>
 
 ### [AI_agent - RAG 기반 ETF 질의응답 챗봇](https://github.com/m2222n/AI_agent)
 > LangChain + FAISS 기반 금융 정보 검색 및 응답 시스템
@@ -126,11 +141,25 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
 
-### [ko_br_math_api - 한국 수학 점자 RBMT 알고리즘 개선](https://github.com/flickdone/ko_br_math_api) 🔒 Private (오리누 주식회사) — 현재 타 프로젝트 배정
+### [ko_br_math_api - 한국 수학 점자 RBMT 알고리즘 개선](https://github.com/flickdone/ko_br_math_api) 🔒 Private (오리누 주식회사)
 > LaTeX 수식 → 한국 수학 점자 변환 API (정확도 98.2%)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+
+<details>
+<summary>▼ 상세 내용</summary>
+
+- 변환 정확도 **98.23%** (333/339 테스트 케이스) — 기존 63% → 98.2%
+- 레거시 코드 **82% 감축** (3,229줄 → 570줄) 대규모 리팩터링
+- LaTeX → BRF → Unicode 점자 **26단계 변환 파이프라인** 구축
+- **339개** 테스트 케이스 자동화, API 안정성 100%
+- FastAPI 서버 2종 구축 (변환 API + 검증 API)
+- **현재 타 프로젝트 배정으로 일시 중단**
+
+**📅 기간**: 2026.01 (2주) | **역할**: 백엔드 개발자 (단독)
+
+</details>
 
 ### [seoul-mealkit-location-analysis - 서울시 신규 밀키트 매장 입지 선정 분석](https://github.com/m2222n/seoul-mealkit-location-analysis)
 > ML/DL 기반 최적 입지 추천 시스템
