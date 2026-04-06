@@ -92,7 +92,7 @@
 <summary>상세 내용</summary>
 
 **📊 성과**
-- FastAPI 백엔드 **43개** API 라우트 + React/TypeScript 프론트엔드 (1인 풀스택)
+- FastAPI 백엔드 **71개** API 라우트 + React/TypeScript 프론트엔드 (1인 풀스택)
 - 3D 빈피킹 인식률 **100%** (easy, FGR), RMSE **1.13mm**, 매칭 속도 **2.25s**
 - Open3D + FPFH + FGR + ICP 기반 **30종** 부품 인식 + 6DoF 자세 추정
 - Formlabs Web API + Local API 이중 통합, WireGuard VPN 원격 접속 인프라
