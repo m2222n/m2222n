@@ -148,8 +148,8 @@
 
 </details>
 
-### [AI_agent - RAG 기반 ETF 질의응답 챗봇](https://github.com/m2222n/AI_agent)
-> KRX 전종목 데이터 기반 하이브리드 검색 + LLM 금융 질의응답 시스템 ([Demo](https://aiagent-5ejryv4fsnjvhrevzwn3ct.streamlit.app/))
+### [AI_agent - 투자 질의응답 챗봇 (ETF + 주식)](https://github.com/m2222n/AI_agent)
+> KRX 전종목 실시간 데이터 기반 LangGraph 에이전트 + 하이브리드 검색 금융 질의응답 시스템 ([Demo](https://aiagent-5ejryv4fsnjvhrevzwn3ct.streamlit.app/))
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
@@ -157,23 +157,26 @@
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![pykrx](https://img.shields.io/badge/pykrx-KRX_Data-blue?style=flat)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 
 <details>
 <summary>상세 내용</summary>
 
 **📊 성과**
-- pykrx 기반 KRX **714개** ETF 일배치 자동 수집 (시세/NAV/수익률/보유종목/괴리율)
-- FAISS + Kiwi BM25 **하이브리드 검색** + RRF 결합 + MMR 다양성 확보
-- ETF 이름/티커 직접 매칭으로 검색 **Hit Rate 88%** (RAGAS 50개 데이터셋 평가)
-- pytest **57개** 전체 통과, Streamlit Cloud 배포 완료
+- pykrx 기반 KRX **1,084개** ETF + **주식 전종목** 일배치 자동 수집
+- LangGraph 에이전트 + **Function Calling** 4개 도구 (search_etf, compare_etfs, get_etf_list, search_stock)
+- **모델 라우팅**: 단순 질문 → GPT-4o-mini, 복잡 질문 → GPT-4o (API 비용 ~60% 절감)
+- RAGAS **Hit Rate 90.8%** (65개 데이터셋: ETF 88%, 주식 100%)
+- pytest **128개** 전체 통과, Streamlit Cloud 배포 완료
 
 **🔑 핵심 기술**
-- **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF + MMR
+- **LangGraph 에이전트**: LLM 질문 분류 → Function Calling → 조건부 재검색 (최대 2회)
+- **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF(70:30) + MMR(λ=0.7)
 - **검색 파이프라인**: ETF 이름 직접 매칭 → 벡터+키워드 검색 → RRF 결합 → MMR 다양성
 - **할루시네이션 방지**: RRF 최소 점수 필터링 + context 없으면 "모른다" 응답
-- **RAGAS 평가**: Hit Rate, Precision, Recall 정량 평가 파이프라인
-- Prompt Engineering (CoT, Few-shot, 역할 기반), 질문 유형 자동 분류 (5가지)
-- macOS launchd 일배치 자동화 (매일 18:00 수집)
+- **데이터**: SQLite 3년 보존 (WAL 모드) + JSON 듀얼 라이트, macOS launchd 자동화
+- **모니터링**: LangSmith 트레이싱 연동 (무료 5,000 traces/월)
+- 토큰 단위 실시간 스트리밍, tiktoken 대화 히스토리 관리
 
 **📅 기간**: 2025.11 ~ 현재 (틈틈이 개발 중) | **역할**: AI 개발자 (단독)
 
