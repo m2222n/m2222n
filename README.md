@@ -26,6 +26,7 @@
 ![Claude](https://img.shields.io/badge/Claude-191919?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-6C63FF?style=for-the-badge&logo=chatbot&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
@@ -141,29 +142,33 @@
 </details>
 
 ### [AI_agent - RAG 기반 ETF 질의응답 챗봇](https://github.com/m2222n/AI_agent)
-> LangChain + FAISS 기반 금융 정보 검색 및 응답 시스템
+> KRX 전종목 데이터 기반 하이브리드 검색 + LLM 금융 질의응답 시스템 ([Demo](https://aiagent-mrfkacatrcjjpzrmjzsdfc.streamlit.app/))
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=chainlink&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![pykrx](https://img.shields.io/badge/pykrx-KRX_Data-blue?style=flat)
 
 <details>
 <summary>상세 내용</summary>
 
 **📊 성과**
-- 테스트 성공률 **100%** (17/17 케이스)
-- 질문 분류 정확도 **88.2%**
-- 평균 응답 시간 **6.4초**
-- Streamlit Cloud 배포 완료
+- pykrx 기반 KRX **714개** ETF 일배치 자동 수집 (시세/NAV/수익률/보유종목/괴리율)
+- FAISS + Kiwi BM25 **하이브리드 검색** + RRF 결합 + MMR 다양성 확보
+- ETF 이름/티커 직접 매칭으로 검색 **Hit Rate 88%** (RAGAS 50개 데이터셋 평가)
+- pytest **57개** 전체 통과, Streamlit Cloud 배포 완료
 
 **🔑 핵심 기술**
-- RAG 파이프라인 (LangChain + FAISS)
-- Prompt Engineering (CoT, Few-shot, 역할 기반)
-- 질문 유형 자동 분류 (5가지)
-- 실시간 스트리밍 응답
+- **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF + MMR
+- **검색 파이프라인**: ETF 이름 직접 매칭 → 벡터+키워드 검색 → RRF 결합 → MMR 다양성
+- **할루시네이션 방지**: RRF 최소 점수 필터링 + context 없으면 "모른다" 응답
+- **RAGAS 평가**: Hit Rate, Precision, Recall 정량 평가 파이프라인
+- Prompt Engineering (CoT, Few-shot, 역할 기반), 질문 유형 자동 분류 (5가지)
+- macOS launchd 일배치 자동화 (매일 18:00 수집)
 
-**📅 기간**: 2024.11 ~ 2024.12 (3주) | **역할**: AI 에이전트 개발자 (단독)
+**📅 기간**: 2025.11 ~ 현재 (틈틈이 개발 중) | **역할**: AI 개발자 (단독)
 
 </details>
 
