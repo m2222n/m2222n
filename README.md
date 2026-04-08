@@ -149,7 +149,7 @@
 </details>
 
 ### [AI_agent - RAG 기반 ETF 질의응답 챗봇](https://github.com/m2222n/AI_agent)
-> KRX 전종목 데이터 기반 하이브리드 검색 + LLM 금융 질의응답 시스템 ([Demo](https://aiagent-mrfkacatrcjjpzrmjzsdfc.streamlit.app/))
+> KRX 전종목 데이터 기반 하이브리드 검색 + LLM 금융 질의응답 시스템 ([Demo](https://aiagent-5ejryv4fsnjvhrevzwn3ct.streamlit.app/))
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
