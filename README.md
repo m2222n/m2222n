@@ -88,22 +88,29 @@
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
 ![Open3D](https://img.shields.io/badge/Open3D-2496ED?style=flat&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat&logo=mqtt&logoColor=white)
+![Modbus TCP](https://img.shields.io/badge/Modbus_TCP-FF6600?style=flat&logoColor=white)
+![Basler](https://img.shields.io/badge/Basler-pypylon-0078D4?style=flat&logoColor=white)
+![RealSense](https://img.shields.io/badge/RealSense-D435-0071C5?style=flat&logo=intel&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
+![trimesh](https://img.shields.io/badge/trimesh-4.x-green?style=flat&logoColor=white)
 
 <details>
 <summary>상세 내용</summary>
 
 **📊 성과**
 - FastAPI 백엔드 **71개** API 라우트 + React/TypeScript 프론트엔드 (1인 풀스택)
-- 3D 빈피킹 인식률 **100%** (easy, FGR), RMSE **1.13mm**, 매칭 속도 **2.25s**
-- Open3D + FPFH + FGR + ICP 기반 **30종** 부품 인식 + 6DoF 자세 추정
+- 3D 빈피킹 인식률 **100%** (easy/medium), RMSE **1.12mm**, 매칭 속도 **0.5s/부품**
+- OBB SizeFilter + 포인트 비율 필터 → 이전 대비 **4~5배 속도 개선** (2.25s → 0.5s)
+- Open3D + FPFH + FGR + ICP 기반 **29종** 부품 인식 + 6DoF 자세 추정
 - Formlabs Web API + Local API 이중 통합, WireGuard VPN 원격 접속 인프라
 
 **🔑 핵심 기술**
+- **3D 빈피킹 L1~L6 파이프라인**: 영상취득 → 전처리 → DBSCAN 분할 → OBB SizeFilter + FPFH/FGR/ICP 인식 → 그래스프 계획 → Modbus TCP 로봇 통신
+- Basler Blaze-112(ToF) + ace2(RGB) 듀얼 카메라 구성 (5월 입고 예정)
 - WebSocket 실시간 프린터 상태 모니터링
 - OpenMV + Edge Impulse 비전 기반 세척/경화 완료 감지 (Phase 4)
 - MQTT (Mosquitto) IoT 디바이스 통신
 - Modbus TCP 협동로봇(HCR-12, HCR-10L) 연동 (Phase 3)
-- L1~L6 빈피킹 파이프라인 (영상취득 → 전처리 → DBSCAN 분할 → 인식 → 그래스프 → Modbus 로봇 통신)
 - Docker 컨테이너 기반 배포
 
 **📅 기간**: 2025.11 ~ 현재 | **역할**: AI/풀스택 개발자 (단독)
