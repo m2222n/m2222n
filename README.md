@@ -36,6 +36,7 @@
 ![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Open3D](https://img.shields.io/badge/Open3D-2496ED?style=for-the-badge&logo=pointcloud&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -79,7 +80,7 @@
 ## 🚀 프로젝트
 
 ### [3D_printer_automation - 3D프린터-로봇 연동 자동화 시스템](https://github.com/m2222n/3D_printer_automation) 🔒 Private (오리누 주식회사)
-> Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 + 3D 빈피킹 비전 시스템 (1인 풀스택 개발) 📅 2025.11 ~ 현재
+> Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 + 3D 빈피킹 비전 시스템 + MaixCAM 엣지 AI (1인 풀스택 개발) 📅 2025.11 ~ 현재
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
@@ -89,6 +90,7 @@
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat&logo=socketdotio&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-Tunnel-F38020?style=flat&logo=cloudflare&logoColor=white)
 ![Open3D](https://img.shields.io/badge/Open3D-2496ED?style=flat&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat&logo=mqtt&logoColor=white)
 ![Modbus TCP](https://img.shields.io/badge/Modbus_TCP-FF6600?style=flat&logoColor=white)
@@ -101,20 +103,18 @@
 <summary>상세 내용</summary>
 
 **📊 성과**
-- FastAPI 백엔드 **71개** API 라우트 + React/TypeScript 프론트엔드 (1인 풀스택)
-- 3D 빈피킹 인식률 **100%** (easy/medium), RMSE **1.12mm**, 매칭 속도 **0.5s/부품**
-- OBB SizeFilter + 포인트 비율 필터 → 이전 대비 **4~5배 속도 개선** (2.25s → 0.5s)
-- Open3D + FPFH + FGR + ICP 기반 **29종** 부품 인식 + 6DoF 자세 추정
-- Formlabs Web API + Local API 이중 통합, WireGuard VPN 원격 접속 인프라
+- FastAPI **43개** API + React/TypeScript **7탭** UI (1인 풀스택)
+- 3D 빈피킹 인식률 **100%** (easy/medium), crowded **90%**, 매칭 **0.5s/부품**
+- Open3D + FPFH/FGR/Colored ICP 기반 **29종** 부품 6DoF 자세 추정
+- 카카오 클라우드 운영 + Cloudflare Tunnel + WireGuard VPN 인프라
+- 한솔코에버 협업 (시퀀스 서비스 + 자동화 프론트엔드 머지)
 
 **🔑 핵심 기술**
-- **3D 빈피킹 L1~L6 파이프라인**: 영상취득 → 전처리 → DBSCAN 분할 → OBB SizeFilter + FPFH/FGR/ICP 인식 → 그래스프 계획 → Modbus TCP 로봇 통신
-- Basler Blaze-112(ToF) + ace2(RGB) 듀얼 카메라 구성 (5월 입고 예정)
-- WebSocket 실시간 프린터 상태 모니터링
-- OpenMV + Edge Impulse 비전 기반 세척/경화 완료 감지 (Phase 4)
-- MQTT (Mosquitto) IoT 디바이스 통신
-- Modbus TCP 협동로봇(HCR-12, HCR-10L) 연동 (Phase 3)
-- Docker 컨테이너 기반 배포
+- **3D 빈피킹 L1~L6**: 영상취득 → DBSCAN 분할 → FPFH/FGR/Colored ICP 인식 → 그래스프 → Modbus TCP 로봇 통신
+- Basler Blaze-112(ToF) + ace2(RGB) 듀얼 카메라 + RealSense D435
+- WebSocket 실시간 모니터링 + Formlabs Cloud/Local API 이중 통합
+- MaixCAM 엣지 AI 세척기/경화기 완료 감지
+- Modbus TCP 협동로봇 HCR-12 + HCR-10L 연동
 
 **📅 기간**: 2025.11 ~ 현재 | **역할**: AI/풀스택 개발자 (단독)
 
