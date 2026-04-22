@@ -152,7 +152,7 @@
 </details>
 
 ### [AI_agent - 투자 질의응답 챗봇 (ETF + 주식)](https://github.com/m2222n/AI_agent)
-> KRX 전종목 실시간 데이터 기반 LangGraph 에이전트 + 하이브리드 검색 금융 질의응답 시스템 ([Demo](https://aiagent-5ejryv4fsnjvhrevzwn3ct.streamlit.app/))
+> KRX 전종목 실시간 데이터 기반 LangGraph 에이전트 + 하이브리드 검색 금융 질의응답 시스템 (<a href="https://aiagent-5ejryv4fsnjvhrevzwn3ct.streamlit.app/" target="_blank">Demo</a>)
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
