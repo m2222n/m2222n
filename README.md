@@ -27,6 +27,8 @@
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-6C63FF?style=for-the-badge&logo=chatbot&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=for-the-badge&logo=meta&logoColor=white)
+![RAGAS](https://img.shields.io/badge/RAGAS-Evaluation-blue?style=for-the-badge)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
@@ -44,6 +46,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white)
 ![Modbus TCP](https://img.shields.io/badge/Modbus_TCP-FF6600?style=for-the-badge&logoColor=white)
@@ -158,25 +161,33 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![pykrx](https://img.shields.io/badge/pykrx-KRX_Data-blue?style=flat)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![matplotlib](https://img.shields.io/badge/matplotlib-11557c?style=flat&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![dart-fss](https://img.shields.io/badge/dart--fss-OpenDart-003478?style=flat)
 
 <details>
 <summary>상세 내용</summary>
 
 **📊 성과**
-- pykrx 기반 KRX **1,084개** ETF + **주식 전종목** 일배치 자동 수집
-- LangGraph 에이전트 + **Function Calling** 4개 도구 (search_etf, compare_etfs, get_etf_list, search_stock)
+- pykrx 기반 KRX **1,088개** ETF + **주식 전종목** (~3,100) 일배치 자동 수집
+- **12년** 과거 데이터 백필 (2014~2026, **800만 행**, SQLite 1.5GB)
+- LangGraph 에이전트 + **Function Calling 13개** 도구 (검색/비교/기술적 분석/재무제표/포트폴리오/가격 전망 등)
 - **모델 라우팅**: 단순 질문 → GPT-4o-mini, 복잡 질문 → GPT-4o (API 비용 ~60% 절감)
-- RAGAS **Hit Rate 90.8%** (65개 데이터셋: ETF 88%, 주식 100%)
-- pytest **128개** 전체 통과, Streamlit Cloud 배포 완료
+- RAGAS **Hit Rate 100%** (162개 데이터셋, 8개 유형)
+- pytest **431개** 전체 통과, Streamlit Cloud 배포 완료
+- **자동 수집 이중화**: GitHub Actions (deploy/ + DB Release) + macOS launchd
 
 **🔑 핵심 기술**
-- **LangGraph 에이전트**: LLM 질문 분류 → Function Calling → 조건부 재검색 (최대 2회)
+- **LangGraph 에이전트**: LLM 질문 분류 → Function Calling 13개 도구 → CoV 검증 → 조건부 재검색
 - **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF(70:30) + MMR(λ=0.7)
-- **검색 파이프라인**: ETF 이름 직접 매칭 → 벡터+키워드 검색 → RRF 결합 → MMR 다양성
-- **할루시네이션 방지**: RRF 최소 점수 필터링 + context 없으면 "모른다" 응답
-- **데이터**: SQLite 3년 보존 (WAL 모드) + JSON 듀얼 라이트, macOS launchd 자동화
+- **검색 파이프라인**: 이름/접두어/별칭 매칭 → 벡터+키워드 검색 → RRF 결합 → MMR 다양성
+- **기술적 분석**: 11개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR) + matplotlib 3단 차트
+- **가격 전망**: 3축 종합 분석 (기술적+펀더멘털+Ridge회귀, Bootstrap CI, 시나리오별 확률)
+- **재무제표**: OpenDart 전종목 147,048건 백필 + 주간 자동 갱신
+- **할루시네이션 방지**: CoV 검증 + Structured Output + force_answer (증거 기반 강제 답변)
+- **데이터**: SQLite 12년 영구 보존 (WAL 모드) + GitHub Release DB + JSON fallback
+- **탭 UI**: 5개 전용 탭 + ~4,200종목 자동완성 검색 + 후속질문 버튼
 - **모니터링**: LangSmith 트레이싱 연동 (무료 5,000 traces/월)
-- 토큰 단위 실시간 스트리밍, tiktoken 대화 히스토리 관리
 
 **📅 기간**: 2025.11 ~ 현재 (틈틈이 개발 중) | **역할**: AI 개발자 (단독)
 
