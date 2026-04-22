@@ -80,7 +80,7 @@
 ## 🚀 프로젝트
 
 ### [3D_printer_automation - 3D프린터-로봇 연동 자동화 시스템](https://github.com/m2222n/3D_printer_automation) 🔒 Private (오리누 주식회사)
-> Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 + 3D 빈피킹 비전 시스템 + MaixCAM 엣지 AI (1인 풀스택 개발) 📅 2025.11 ~ 현재
+> Formlabs Form 4 프린터 4대 실시간 모니터링 + 원격 제어 웹 플랫폼 + 3D 빈피킹 비전 시스템 + MaixCAM 엣지 AI (1인 풀스택 개발) 📅 2026.02 ~ 현재
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
@@ -116,7 +116,7 @@
 - MaixCAM 엣지 AI 세척기/경화기 완료 감지
 - Modbus TCP 협동로봇 HCR-12 + HCR-10L 연동
 
-**📅 기간**: 2025.11 ~ 현재 | **역할**: AI/풀스택 개발자 (단독)
+**📅 기간**: 2026.02 ~ 현재 | **역할**: AI/풀스택 개발자 (단독)
 
 </details>
 
