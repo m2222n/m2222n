@@ -164,6 +164,7 @@
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![matplotlib](https://img.shields.io/badge/matplotlib-11557c?style=flat&logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![Cohere](https://img.shields.io/badge/Cohere-Rerank_v3.5-39594D?style=flat&logoColor=white)
 ![dart-fss](https://img.shields.io/badge/dart--fss-OpenDart-003478?style=flat)
 
 <details>
@@ -174,14 +175,14 @@
 - **12년** 과거 데이터 백필 (2014~2026, **800만 행**, SQLite 1.5GB)
 - LangGraph 에이전트 + **Function Calling 13개** 도구 (검색/비교/기술적 분석/재무제표/포트폴리오/가격 전망 등)
 - **모델 라우팅**: 단순 질문 → GPT-4o-mini, 복잡 질문 → GPT-4o (API 비용 ~60% 절감)
-- RAGAS **Hit Rate 100%** (162개 데이터셋, 8개 유형)
-- pytest **431개** 전체 통과, Streamlit Cloud 배포 완료
+- RAGAS **Hit Rate 100%** (162개 데이터셋, 8개 유형), **F 0.688 / AR 0.709 / CR 0.854**
+- pytest **515개** 전체 통과 (단위 + E2E 통합), Streamlit Cloud 배포 완료
 - **자동 수집 이중화**: GitHub Actions (deploy/ + DB Release) + macOS launchd
 
 **🔑 핵심 기술**
 - **LangGraph 에이전트**: LLM 질문 분류 → Function Calling 13개 도구 → CoV 검증 → 조건부 재검색
-- **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF(70:30) + MMR(λ=0.7)
-- **검색 파이프라인**: 이름/접두어/별칭 매칭 → 벡터+키워드 검색 → RRF 결합 → MMR 다양성
+- **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF(70:30) + Cohere Rerank v3.5 + MMR(λ=0.7)
+- **검색 파이프라인**: 이름/접두어/별칭 매칭 → 벡터+키워드 검색 → RRF 결합 → Cohere Rerank → MMR 선택
 - **기술적 분석**: 11개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR) + matplotlib 3단 차트
 - **가격 전망**: 3축 종합 분석 (기술적+펀더멘털+Ridge회귀, Bootstrap CI, 시나리오별 확률)
 - **재무제표**: OpenDart 전종목 147,048건 백필 + 주간 자동 갱신
