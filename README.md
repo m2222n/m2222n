@@ -176,19 +176,20 @@
 - LangGraph 에이전트 + **Function Calling 13개** 도구 (검색/비교/기술적 분석/재무제표/포트폴리오/가격 전망 등)
 - **모델 라우팅**: 단순 질문 → GPT-4o-mini, 복잡 질문 → GPT-4o (API 비용 ~60% 절감)
 - RAGAS **Hit Rate 100%** (162개 데이터셋, 8개 유형), **F 0.688 / AR 0.709 / CR 0.854**
-- pytest **515개** 전체 통과 (단위 + E2E 통합), Streamlit Cloud 배포 완료
+- pytest **522개** 전체 통과 (단위 + E2E 통합), Streamlit Cloud 배포 완료
+- **8종 matplotlib 차트**: 기술적 지표/비교 시계열/백테스트/재무제표 추이/밸류에이션/장중 시세/섹터 개요/섹터 상세
 - **자동 수집 이중화**: GitHub Actions (deploy/ + DB Release) + macOS launchd
 
 **🔑 핵심 기술**
 - **LangGraph 에이전트**: LLM 질문 분류 → Function Calling 13개 도구 → CoV 검증 → 조건부 재검색
 - **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse) + RRF(70:30) + Cohere Rerank v3.5 + MMR(λ=0.7)
 - **검색 파이프라인**: 이름/접두어/별칭 매칭 → 벡터+키워드 검색 → RRF 결합 → Cohere Rerank → MMR 선택
-- **기술적 분석**: 11개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR) + matplotlib 3단 차트
+- **기술적 분석**: 12개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR/크로스) + matplotlib 3단 차트
 - **가격 전망**: 3축 종합 분석 (기술적+펀더멘털+Ridge회귀, Bootstrap CI, 시나리오별 확률)
 - **재무제표**: OpenDart 전종목 147,048건 백필 + 주간 자동 갱신
 - **할루시네이션 방지**: CoV 검증 + Structured Output + force_answer (증거 기반 강제 답변)
 - **데이터**: SQLite 12년 영구 보존 (WAL 모드) + GitHub Release DB + JSON fallback
-- **탭 UI**: 5개 전용 탭 + ~4,200종목 자동완성 검색 + 후속질문 버튼
+- **6탭 UI**: 종합 채팅/기술적 분석/재무제표/가격 전망/비교 분석/섹터 분석 + ~4,200종목 자동완성 + 관심종목(Watchlist) + 후속질문 버튼
 - **모니터링**: LangSmith 트레이싱 연동 (무료 5,000 traces/월)
 
 **📅 기간**: 2025.11 ~ 현재 (틈틈이 개발 중) | **역할**: AI 개발자 (단독)
