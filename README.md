@@ -90,13 +90,15 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat&logo=socketdotio&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-Tunnel-F38020?style=flat&logo=cloudflare&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-11.3-003545?style=flat&logo=mariadb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 ![Open3D](https://img.shields.io/badge/Open3D-2496ED?style=flat&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat&logo=mqtt&logoColor=white)
 ![Modbus TCP](https://img.shields.io/badge/Modbus_TCP-FF6600?style=flat&logoColor=white)
 ![Basler](https://img.shields.io/badge/Basler-pypylon-0078D4?style=flat&logoColor=white)
 ![RealSense](https://img.shields.io/badge/RealSense-D435-0071C5?style=flat&logo=intel&logoColor=white)
+![NSSM](https://img.shields.io/badge/NSSM-Service-008CFF?style=flat&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 ![trimesh](https://img.shields.io/badge/trimesh-4.x-green?style=flat&logoColor=white)
 
@@ -104,18 +106,20 @@
 <summary>상세 내용</summary>
 
 **📊 성과**
-- FastAPI **43개** API + React/TypeScript **7탭** UI (1인 풀스택)
-- 3D 빈피킹 인식률 **100%** (easy/medium), crowded **90%**, 매칭 **0.5s/부품**
+- FastAPI **43개** API (11 REST + 32 Local API) + React/TypeScript **7탭** UI + WebSocket 실시간 (1인 풀스택)
+- 3D 빈피킹 인식률: easy **100%** / crowded **90%** / hard **60%**, 매칭 **0.4~0.6s/부품**
 - Open3D + FPFH/FGR/Colored ICP 기반 **29종** 부품 6DoF 자세 추정
-- 카카오 클라우드 운영 + Cloudflare Tunnel + WireGuard VPN 인프라
-- 한솔코에버 협업 (시퀀스 서비스 + 자동화 프론트엔드 머지)
+- 카카오 클라우드 VM + 6000 서버 + 공장 PC **3중 배포**, Cloudflare Tunnel (`factory.flickdone.com`) 허브 운영
+- 공장 PC **무인 자동 복구**: NSSM Windows 서비스로 web-api/sequence_service 등록, 재부팅 **55초** 내 전체 복구 검증
+- 한솔코에버 협업: sequence_service(시퀀스 런타임) + Automation 프론트엔드 메인 **머지 3회** (4/3, 4/16, 4/23)
 
 **🔑 핵심 기술**
-- **3D 빈피킹 L1~L6**: 영상취득 → DBSCAN 분할 → FPFH/FGR/Colored ICP 인식 → 그래스프 → Modbus TCP 로봇 통신
-- Basler Blaze-112(ToF) + ace2(RGB) 듀얼 카메라 + RealSense D435
-- WebSocket 실시간 모니터링 + Formlabs Cloud/Local API 이중 통합
-- MaixCAM 엣지 AI 세척기/경화기 완료 감지
-- Modbus TCP 협동로봇 HCR-12 + HCR-10L 연동
+- **3D 빈피킹 L1~L6 파이프라인**: 영상취득(Basler/D435) → 전처리(Open3D) → DBSCAN 분할 → FPFH+RANSAC+(Colored) ICP 인식 + OBB SizeFilter → 그래스프(29종 DB) → Modbus TCP 전송
+- Basler Blaze-112(ToF, 640×480) + ace2(RGB, 5MP) 듀얼 카메라 eye-in-hand + RealSense D435
+- WebSocket 실시간 모니터링 + Formlabs Cloud API(읽기 전용) + Local API(프린트 제어) 이중 통합
+- MaixCAM 엣지 AI (1 TOPS NPU): 세척기/경화기 완료 감지 온디바이스 추론
+- Modbus TCP로 한화 HCR-12 + HCR-10L 협동로봇 연동 (INT16 레지스터 130~151)
+- DB 아키텍처 옵션 2c: 공장 로컬 **MariaDB 11.3** + Cloudflare Tunnel 기반 원격 접근 (설비제어는 로컬 유지로 장애 격리)
 
 **📅 기간**: 2026.02 ~ 현재 | **역할**: AI/풀스택 개발자 (단독)
 
