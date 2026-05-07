@@ -193,7 +193,7 @@
 - **하이브리드 RAG**: FAISS(Dense) + Kiwi BM25(Sparse, pickle 캐싱) + RRF(70:30) + Cohere Rerank v3.5 + MMR(λ=0.7)
 - **Vector DB 듀얼 백엔드**: FAISS(기본) / Pinecone(선택), 실패 시 FAISS 자동 fallback
 - **검색 파이프라인**: 이름/접두어/별칭 매칭 → 벡터+키워드 검색 → RRF 결합 → Cohere Rerank → MMR 선택
-- **기술적 분석**: 12개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR/크로스) + matplotlib 3단 차트
+- **기술적 분석**: 11개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR/크로스) + matplotlib 3단 차트
 - **가격 전망**: 4축 종합 분석 (기술적+펀더멘털+Ridge회귀+Prophet 시계열, EMA 피처, Bootstrap CI, 시나리오별 확률)
 - **뉴스 감성 분석**: Google News RSS + GPT-4o-mini (긍정/부정/중립/혼재)
 - **재무제표**: OpenDart 전종목 147,048건 백필 + 주간 자동 갱신
