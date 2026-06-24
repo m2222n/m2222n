@@ -41,6 +41,7 @@
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ### Backend & Database
@@ -52,6 +53,7 @@
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white)
 ![Modbus TCP](https://img.shields.io/badge/Modbus_TCP-FF6600?style=for-the-badge&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 
 ### Data Engineering
 ![Scrapy](https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge&logo=scrapy&logoColor=white)
@@ -159,18 +161,23 @@
 </details>
 
 ### [AI_agent - 투자 질의응답 챗봇 (ETF + 주식)](https://github.com/m2222n/AI_agent)
-> KRX 전종목 실시간 데이터 기반 LangGraph 에이전트 + 하이브리드 검색 금융 질의응답 시스템 ([Demo](https://aiagent-5ejryv4fsnjvhrevzwn3ct.streamlit.app/))
+> KRX 전종목 데이터 기반 LangGraph 에이전트 + 하이브리드 검색 금융 질의응답 SaaS — 한국투자증권 실시간 시세 + 가상투자 ([Demo](https://radiant-abundance-production-bdf0.up.railway.app))
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=chainlink&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-00A3E0?style=flat)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![pykrx](https://img.shields.io/badge/pykrx-KRX_Data-blue?style=flat)
+![Cohere](https://img.shields.io/badge/Cohere-Rerank_v3.5-39594D?style=flat&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![pykrx](https://img.shields.io/badge/pykrx-KRX_Data-blue?style=flat)
+![KIS](https://img.shields.io/badge/한국투자증권-OpenAPI-0046FF?style=flat)
 ![matplotlib](https://img.shields.io/badge/matplotlib-11557c?style=flat&logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![Cohere](https://img.shields.io/badge/Cohere-Rerank_v3.5-39594D?style=flat&logoColor=white)
+![Prophet](https://img.shields.io/badge/Prophet-시계열-005571?style=flat)
 ![dart-fss](https://img.shields.io/badge/dart--fss-OpenDart-003478?style=flat)
 
 <details>
@@ -178,13 +185,14 @@
 
 **📊 성과**
 - pykrx 기반 KRX **1,088개** ETF + **주식 전종목** (~3,100) 일배치 자동 수집
-- **12년** 과거 데이터 백필 (2014~2026, **800만 행**, SQLite 1.5GB)
+- **12년** 과거 데이터 백필 (2014~현재, **880만 행**, SQLite 1.8GB)
 - LangGraph 에이전트 + **Function Calling 14개** 도구 (검색/비교/기술적 분석/재무제표/포트폴리오/가격 전망/뉴스 감성 등)
-- **멀티 도구 병렬 호출**: ThreadPoolExecutor (응답 시간 ~50% 단축)
-- **모델 라우팅**: 단순 질문 → GPT-4o-mini, 복잡 질문 → GPT-4o (API 비용 ~60% 절감)
-- RAGAS **Hit Rate 100%** (172개 데이터셋, 8개 유형), **F 0.688 / AR 0.709 / CR 0.854**
-- pytest **584개** 전체 통과 (단위 + E2E 통합), Streamlit Cloud 배포 완료
-- **8종 matplotlib 차트**: 기술적 지표/비교 시계열/백테스트/재무제표 추이/밸류에이션/장중 시세/섹터 개요/섹터 상세
+- **SaaS 실배포**: FastAPI + Next.js 16 + Railway 2서비스 (Streamlit 프로토타입 → 웹앱 전환), 설치형 PWA
+- **한국투자증권 실시간 시세**: REST 현재가/호가(10단계) + WebSocket 체결 (yfinance → 종가 fallback)
+- **가상투자**: 1억 가상자금 모의 매매 + 평가손익 + 유저 랭킹 + 수익률 추이 + 라운드 결산
+- **모델 라우팅**: 단순 질문 → GPT-4o-mini, 복잡 질문 → GPT-4o (API 비용 ~60% 절감) + 멀티 도구 병렬 호출(응답 ~50% 단축)
+- RAG **Hit Rate 100%** (192개 데이터셋, 11개 유형), RAGAS **F 0.69 / AR 0.75 / CR 0.85**
+- pytest **838개** 전체 통과 (단위 + E2E 통합 + API/인증/푸시/KIS)
 - **자동 수집 이중화**: GitHub Actions (deploy/ + DB Release) + Watchdog 검증 + macOS launchd
 - 코드 리팩토링: 4개 대형 모듈 → **22 서브모듈** 패키지 분리 (100% 역호환)
 
@@ -195,11 +203,12 @@
 - **검색 파이프라인**: 이름/접두어/별칭 매칭 → 벡터+키워드 검색 → RRF 결합 → Cohere Rerank → MMR 선택
 - **기술적 분석**: 11개 지표 (MA/RSI/MACD/볼린저/스토캐스틱/일목균형표/CCI/ADX/OBV/ATR/크로스) + matplotlib 3단 차트
 - **가격 전망**: 4축 종합 분석 (기술적+펀더멘털+Ridge회귀+Prophet 시계열, EMA 피처, Bootstrap CI, 시나리오별 확률)
-- **뉴스 감성 분석**: Google News RSS + GPT-4o-mini (긍정/부정/중립/혼재)
+- **뉴스 감성 분석**: Google News RSS + 로컬 KR-FinBert-SC(선택적 설치, 비용 0) → GPT fallback (긍정/부정/중립/혼재)
 - **재무제표**: OpenDart 전종목 147,048건 백필 + 주간 자동 갱신
+- **SaaS 아키텍처**: FastAPI(/chat·/stream SSE + /tabs REST) + Next.js 16 + JWT 인증 + 유저별 저장(관심종목/이력/가상투자) + 웹 푸시(VAPID, 관심종목 급등/급락 알림)
 - **할루시네이션 방지**: CoV 검증 + Structured Output + force_answer (증거 기반 강제 답변)
-- **데이터**: SQLite 12년 영구 보존 (WAL 모드) + GitHub Release DB + JSON fallback
-- **6탭 UI**: 종합 채팅/기술적 분석/재무제표/가격 전망/비교 분석/섹터 분석 + ~4,200종목 자동완성 + 관심종목(Watchlist) + 후속질문 버튼
+- **데이터**: SQLite 12년 영구 보존 (WAL) + 유저 DB PostgreSQL 영구화 + 영속 볼륨(콜드스타트 제거) + GitHub Release DB
+- **7탭 UI**: 종합 채팅/기술적 분석/재무제표/가격 전망/비교 분석/섹터 분석/가상투자 + ~4,200종목 자동완성 + 관심종목(Watchlist) + 후속질문 버튼
 - **모니터링**: LangSmith 트레이싱 연동 (무료 5,000 traces/월)
 
 **📅 기간**: 2025.11 ~ 현재 (틈틈이 개발 중) | **역할**: AI 개발자 (단독)
